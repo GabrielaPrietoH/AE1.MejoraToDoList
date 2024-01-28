@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewTarea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tarea"
+        android:textColor="@color/azul_ocuro"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonDone"
+        android:layout_width="22dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:background="@mipmap/borrar"
+        android:contentDescription="@string/editar"
+        android:onClick="borrarTarea"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonEdit"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonEdit"
+        android:layout_width="22dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:background="@mipmap/editar"
+        android:contentDescription="@string/done"
+        android:onClick="updateTarea"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTarea"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

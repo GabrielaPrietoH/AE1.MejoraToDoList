@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="490dp"
+        android:layout_marginTop="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:background="@drawable/fondo"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/hergola_regular"
+        android:text="@string/titulo"
+        android:textColor="@color/azul_ocuro"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCorreo"
+        android:layout_width="309dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/azul_claro"
+        app:boxStrokeColor="#1E32B6"
+        app:counterTextColor="@color/azul_claro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:suffixTextColor="@color/azul_claro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hintcorreo"
+            android:textColorHighlight="@color/azul_claro"
+            android:textColorHint="@color/azul_claro"
+            android:textColorLink="@color/azul_ocuro"
+            android:textSize="16sp" />
+
+        <requestFocus />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPass"
+        android:layout_width="314dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/azul_claro"
+        app:boxStrokeColor="#1E32B6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCorreo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cajaPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hintpass"
+            android:inputType="textPassword"
+            android:textColorHint="@color/azul_claro"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/azul_claro"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:icon="@drawable/llavedigital"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPass" />
+
+    <TextView
+        android:id="@+id/botonRegistro"
+        android:layout_width="163dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/registro"
+        android:textColor="@color/azul_claro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonLogin" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titulo"
+        app:srcCompat="@drawable/icono" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

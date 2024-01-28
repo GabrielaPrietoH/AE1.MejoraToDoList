@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Library</string>
+    <string name="hintcorreo">Correo</string>
+    <string name="hintpass">Password</string>
+    <string name="login">Login</string>
+    <string name="registro">Crear una cuenta</string>
+    <string name="mas">Mas</string>
+    <string name="logout">Logout</string>
+    <string name="tarea">Tarea</string>
+    <string name="done">Done</string>
+    <string name="titulo">My Library</string>
+    <string name="editar">editar</string>
+</resources>

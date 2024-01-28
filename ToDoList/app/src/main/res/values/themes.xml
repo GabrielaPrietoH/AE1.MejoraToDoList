@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDoList" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <item
+            name="colorPrimary">@color/azul_claro
+        </item>
+        <item
+            name="android:windowSplashScreenBackground">@color/azul_claro
+        </item>
+
+        <item
+            name="android:windowSplashScreenAnimatedIcon">@drawable/icono
+        </item>
+
+
+    </style>
+
+    <style name="Theme.ToDoList" parent="Base.Theme.ToDoList" />
+
+</resources>
